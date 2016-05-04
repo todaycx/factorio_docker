@@ -9,7 +9,7 @@ WORKDIR /opt
 
 COPY ./smart_launch.sh /opt/
 COPY ./factorio.crt /opt/
-COPY ./save.zip /opt/factorio/saves
+COPY ./save.zip /opt/factorio/saves/
 
 ENV FACTORIO_AUTOSAVE_INTERVAL=2 \
     FACTORIO_AUTOSAVE_SLOTS=3 \
