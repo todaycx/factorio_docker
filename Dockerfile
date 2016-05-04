@@ -20,7 +20,6 @@ ENV FACTORIO_AUTOSAVE_INTERVAL=2 \
 
 RUN apk --update add bash curl && \
     curl -sSL --cacert /opt/factorio.crt https://www.factorio.com/get-download/$VERSION/headless/linux64 -o /opt/factorio_headless_x64_$VERSION.tar.gz && \
-    echo "$FACTORIO_SHA1  /opt/factorio_headless_x64_$VERSION.tar.gz" | sha1sum -c && \
     tar xzf /opt/factorio_headless_x64_$VERSION.tar.gz
 
 EXPOSE 34197/udp
